@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;300;400&family=Roboto:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply font-Roboto 
+}
+html, body{
+    scroll-behavior: smooth;
+}
+button{
+    @apply px-5 py-2 text-[15px] my-4 bg-[#FF7518] text-white border-0 hover:bg-black min-w-fit
+}
+label{
+    @apply flex items-center gap-2
+}
+span{
+    @apply text-[15px]
+}
+.active{
+    @apply bg-black
+}
+
+#sidebar{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.918);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.4px);
+    -webkit-backdrop-filter: blur(10.4px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+#cart-item{
+   /* From https://css.glass */
+    background: rgba(255, 116, 24, 0.963);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 117, 24, 0.26);
+}
+
+#header-bg{
+    background: linear-gradient(180deg, rgba(27, 26, 26, 0.032), rgba(255, 116, 24, 0.3)), url('./components//images//pexels-jens-mahnke-1153838.jpg');
+    background-position: center;
+    background-size: cover;
+}
